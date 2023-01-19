@@ -127,3 +127,23 @@ faqs.forEach(function(faq) {
       }
   });
 });
+
+// footer links animation
+const items = document.querySelectorAll('.social-link');
+
+items.forEach(item => {
+    item.addEventListener('mouseover', () => {
+        items.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.add('transition');
+                otherItem.style.filter = 'invert(53%) sepia(6%) saturate(16%) hue-rotate(338deg) brightness(93%) contrast(87%)';
+            }
+        });
+    });
+    item.addEventListener('mouseout', () => {
+        items.forEach(otherItem => {
+            otherItem.classList.add('transition');
+            otherItem.style.filter = 'invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%)';
+        });
+    });
+});
