@@ -214,6 +214,14 @@ ul {
     color: var(--primary);
 }
 
+.hamburger-menu {
+    width: 30px;
+}
+
+.pseudo-element {
+    width: 30px;
+}
+
 /* home section */
 #home, #faq {
     padding-top: 100px;
@@ -304,6 +312,8 @@ ul {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     display: none;
+    min-width: 325px;
+    text-align: center;
 }
 
 .features-controller li:hover {
@@ -320,6 +330,7 @@ ul {
 @media (min-width: 762px) {
     .features-controller li {
         display: block;
+        min-width: 0;
     }
 }
 
@@ -332,6 +343,11 @@ ul {
 
 #carousel-img, #carousel-title, #carousel-text {
     transition: opacity 0.5 ease-in-out;
+}
+
+.prev, .next {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 /* video section */

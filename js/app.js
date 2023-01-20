@@ -59,10 +59,13 @@ const data = [
 ]
 
 const carousel = document.querySelector('.features-controller');
+const carouselArea = document.querySelector('#features-2');
 const carouselTitle = document.querySelector('#carousel-title');
 const carouselImg = document.querySelector('#carousel-img');
 const carouselText = document.querySelector('#carousel-text');
 const carouselLinks = carousel.querySelectorAll('li');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
 
 let intervalId;
 
@@ -90,19 +93,39 @@ function startInterval() {
 
 startInterval();
 
-carousel.addEventListener('mouseenter', () => {
+carouselArea.addEventListener('mouseenter', () => {
   clearInterval(intervalId);
 });
 
-carousel.addEventListener('mouseleave', () => {
+carouselArea.addEventListener('mouseleave', () => {
   startInterval();
 });
+
+console.log(carouselLinks)
 
 carouselLinks.forEach((link, index) => {
   link.addEventListener('click', () => {
     currentIndex = index;
     setActive(currentIndex);
   });
+});
+
+prev.addEventListener('click', () => {
+  if (currentIndex !== 0) {
+    currentIndex = currentIndex - 1;
+  } else {
+    currentIndex = carouselLinks.length - 1
+  }
+  setActive(currentIndex);
+});
+
+next.addEventListener('click', () => {
+  if (currentIndex !== carouselLinks.length - 1) {
+    currentIndex = currentIndex + 1;
+  } else {
+    currentIndex = 0
+  }
+  setActive(currentIndex);
 });
 
 // faq code
