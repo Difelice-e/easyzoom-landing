@@ -41,24 +41,25 @@
     <!-- main content of the page, some section -->
     <main>
         <div class="relative">
-            <!-- <div class="first-gradient"></div>
-            <div class="second-gradient"></div> -->
             <div class="first-section-gradient"></div>
             <!-- first section -->
             <section id="home">
                 <div class="row g-0 mr-md-0 flex-grow-1 align-items-center pt-5">
                     <!-- introducing easyzoom, cta -->
                     <div class="col-12 col-md-6">
-                        <div class="home-left">
-                            <div class="big-logo-wrapper mb-3">
+                        <div class="home-left text-sm-center">
+                            <div class="section-title mb-3 mb-md-3 mx-auto mx-md-0">
+                                <span>Introducing</span>
+                            </div>
+                            <div class="big-logo-wrapper mb-3 mx-auto mx-md-0">
                                 <img src="img/big-logo-easyzoom.png" alt="">
                             </div>
-                            <p class="subtitle mb-5">Empowering you to shape the future, one feature at time.</p>
-                            <div class="d-flex align-items-center gap-2 mb-5">
+                            <p class="subtitle mb-5">Empowering you to shape the future, <br>one feature at time.</p>
+                            <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-2 mb-5">
                                 <button class="btn white-btn">Purchase</button>
                                 <button class="btn primary-btn">Twitter</button>
                             </div>
-                            <div class="d-flex align-items-center gap-3">
+                            <div class="d-flex justify-content-center justify-content-md-start align-items-center gap-3 mb-5 mb-md-0">
                                 <div class="scroll-wrapper">
                                     <div class="scroll-point"></div>
                                 </div>
@@ -67,7 +68,7 @@
                         </div>
                     </div>
                     <!-- homepage img fixed right -->
-                    <div class="col-12 col-md-6 pr-md-0">
+                    <div class="col-12 col-md-6 pr-md-0 d-flex justify-content-end align-items-md-auto">
                         <div class="home-right">
                             <img src="img/Content-HEADER.png" alt="">
                         </div>
@@ -79,15 +80,15 @@
                 <div class="container">
                     <div class="row align-items-center mb-5">
                         <!-- inage of some section of website -->
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 order-1 order-md-0">
                             <div>
                                 <img src="img/Content-SEZ01.png" alt="">
                             </div>
                         </div>
                         <!-- text sextion -->
-                        <div class="col-6">
-                            <div>
-                                <div class="section-title mb-3">
+                        <div class="col-12 col-md-6 order-0 order-md-1">
+                            <div class="text-sm-center">
+                                <div class="section-title mb-3 mb-md-3">
                                     <span>What is Easyzoom?</span>
                                 </div>
                                 <p class="mb-3">
@@ -95,7 +96,7 @@
                                     We already provide you wih a robust and high-performing tool foundation and now, as a member of our DAO council
                                     you'll have a direct say in which features we add and how our tool evolves.
                                 </p>
-                                <p>
+                                <p class="mb-5 mb-md-0">
                                     By minting your own Easyzoom pass, you'll not only have a role in the evolution of the tool but also be rewarded
                                     for every future subscription to the tool enjoying a tangible reward.
                                 </p>
@@ -111,7 +112,7 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12">
-                            <div class="d-flex justify-content-center pb-3 mb-5">
+                            <div class="d-flex justify-content-center pb-3 mb-3 mb-md-5">
                                 <ul class="d-flex align-items-center gap-1 features-controller">
                                     <li class="active">Advanced analytics charts</li>
                                     <li>Discover the whales</li>
@@ -121,15 +122,15 @@
                             </div>
                         </div>
     
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 order-1 order-md-0">
                             <div class="feature-img-wrapper">
                                 <img src="https://picsum.photos/800/600" alt="" id="carousel-img">
                             </div>
                         </div>
-                        <div class="col-6">
-                            <div>
+                        <div class="col-12 col-md-6 order-0 order-md-1">
+                            <div class="text-sm-center">
                                 <p id="carousel-title" class="section-title-secondary mb-3">Get <span class="text-primary">live feed</span> data</p>
-                                <p id="carousel-text">
+                                <p id="carousel-text" class="mb-3 mb-md-0">
                                     Stay on top of the NFT market keeping track of every sale, transfer and mint. <br>
                                     Get instant alerts when important events occur.
                                 </p>
@@ -141,10 +142,12 @@
             <!-- video section -->
             <section id="video">
                 <div class="container">
-                    <div class="col">
-                        <p class="section-title-secondary text-center mb-5">Take a <span class="text-primary">sneak peak</span> at the <span class="text-secondary">foundation</span></p>
-                        <div class="video-wrapper">
-                            <img src="https://picsum.photos/960/540" alt="">
+                    <div class="row">
+                        <div class="col">
+                            <p class="section-title-secondary text-center mb-3 mb-md-5">Take a <span class="text-primary">sneak peak</span> at the <span class="text-secondary">foundation</span></p>
+                            <div class="video-wrapper">
+                                <img src="https://picsum.photos/960/540" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -154,8 +157,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <p class="section-title-secondary text-center mb-5">DAO</p>
-                            <img src="img/Content-DAO.png" alt="">
+                            <p class="section-title-secondary text-center mb-3 mb-md-5">DAO</p>
+                            <img class="d-none d-md-block" src="img/Content-DAO.png" alt="">
+                            <img class="d-block d-md-none" src="img/Content-DAO-Mobile.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -168,8 +172,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <p class="section-title-secondary text-center mb-5">Our <span class="text-primary">schedule</span></p>
-                            <img src="img/Content-ROADMAP.png" alt="">
+                            <p class="section-title-secondary text-center mb-3 mb-md-5">Our <span class="text-primary">schedule</span></p>
+                            <img class="d-none d-md-block" src="img/Content-ROADMAP.png" alt="">
+                            <img class="d-block d-md-none" src="img/Content-ROADMAP-Mobile.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -180,8 +185,8 @@
         <section id="whitepaper">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-10">
-                        <div class="whitepaper-wrapper">
+                    <div class="col-12 col-md-10">
+                        <div class="whitepaper-wrapper text-sm-center">
                             <p class="subtitle">Click the button below to read our official whitepaper</p>
                             <button class="btn primary-btn">Take a look</button>
                         </div>
@@ -193,12 +198,12 @@
         <section id="faq">
             <div class="row g-0 mr-0 flex-grow-1 align-items-center">
                 <!-- list of faq open on click -->
-                <div class="col-6">
+                <div class="col-12 col-md-6">
                     <div class="faq-left">
                         <p style="font-size: 3em; font-weight: 700;">FAQ</p>
                         <div class="mb-5">
                             <p class="section-title-secondary"><span class="text-primary">Frequently</span> Asked Questions</p>
-                            <span class="text-grey">Learn more about Easyzoom within our FAQ.</span>
+                            <span class="text-grey d-block mb-3 mb-md-0">Learn more about Easyzoom within our FAQ.</span>
                             <ul class="faq-list">
                                 <li>
                                     <p class="d-flex align-items-center gap-3"><span class="symbol"></span> What is Easyzoom?</p>
@@ -230,7 +235,7 @@
                     </div>
                 </div>
                 <!-- homepage img fixed right -->
-                <div class="col-6 pr-0">
+                <div class="col-12 col-md-6 pr-md-0 d-flex justify-content-end align-items-md-auto">
                     <div class="faq-right">
                         <img src="img/Content-FAQ.png" alt="">
                     </div>
@@ -243,20 +248,20 @@
     <footer>
         <div class="container">
             <div class="row py-5 border-bottom-primary">
-                <div class="col-4">
-                    <div class="h-100 big-logo-wrapper">
+                <div class="col-12 col-md-4 order-1 order-md-0">
+                    <div class="h-100 big-logo-wrapper mx-auto mx-md-0 py-3 py-md-0">
                         <img src="img/big-logo-easyzoom.png" alt="">
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="h-100 d-flex align-items-end justify-content-center gap-2">
+                <div class="col-12 col-md-4 order-0 order-md-1">
+                    <div class="h-100 d-flex align-items-end justify-content-center gap-2 py-3 py-md-0">
                         <img src="img/whitepaper-icon.svg" alt="" class="icon s">
                         <span>Whitepaper</span>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="h-100 d-flex align-items-end justify-content-center social-wrapper flex-column">
-                        <div>
+                <div class="col-12 col-md-4 order-2">
+                    <div class="h-100 d-flex align-items-center align-items-md-end justify-content-center social-wrapper flex-column py-3 py-md-0">
+                        <div class="text-sm-center">
                             <p class="mb-3">Follow Us</p>
                             <ul class="d-flex align-items-center gap-5">
                                 <li class="social-link">
@@ -282,7 +287,7 @@
             </div>
             <div class="row pt-3 pb-5">
                 <div class="col-12">
-                    <div class="credits-wrapper d-flex align-items-center justify-content-center">
+                    <div class="credits-wrapper d-flex align-items-center justify-content-center ">
                         <span>Copyright 2023 &#169;Easyzoom | All Rights Reserved</span>
                     </div>
                 </div>

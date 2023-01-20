@@ -48,11 +48,22 @@ a {
 
 /* common */
 section {
-    padding: 100px 0 0 0;
-    /* min-height: 100vh; */
-    display: flex;
-    align-items: center;
+    padding: 50px 0 0 0;
     position: relative;
+}
+
+.text-sm-center {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 100px 0 0 0;
+    }
+
+    .text-sm-center {
+        text-align: start;
+    }
 }
 
 .section-title {
@@ -64,8 +75,23 @@ section {
 }
 
 .section-title-secondary {
-    font-size: 1.6em;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.2em;
+}
+
+@media (min-width: 762px) {
+    .section-title-secondary {
+        font-size: 1.6em;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        font-size: 1.6em;
+    }
 }
 
 .text-primary {
@@ -84,12 +110,8 @@ section {
     text-align: center;
 }
 
-.subtitle {
-    font-size: 1.6em;
-}
-
 .btn {
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-radius: 10px;
     padding: 0.3em 3em;
     border: none;
@@ -99,6 +121,12 @@ section {
 .btn:hover {
     border: 1px solid;
     padding: calc(0.3em - 1px) calc(3em - 1px);
+}
+
+@media (min-width: 768px) {
+    .btn {
+        font-size: 1.5em;
+    }
 }
 
 .btn.primary-btn {
@@ -155,9 +183,15 @@ header {
 }
 
 .big-logo-wrapper {
-    max-width: 100%;
+    max-width: 80%;
 }
 
+@media (min-width: 992px) {
+    .big-logo-wrapper {
+        max-width: 100%;
+    }
+}
+ 
 ul {
     list-style: none;
 }
@@ -182,6 +216,7 @@ ul {
 
 /* home section */
 #home, #faq {
+    padding-top: 100px;
     padding-left: 0;
 }
 
@@ -203,13 +238,32 @@ ul {
     }
 }
 
-.home-left {
-    max-width: 549px;
+/* .home-left {
+    padding-left: 28.76px;
+} */
+
+.faq-left {
     padding-left: 28.76px;
 }
 
 .home-right, .faq-right {
-    width: 100%;
+    width: calc(100% - 28.76px);
+}
+
+@media (min-width: 768px) {
+    .home-left {
+        padding-left: 28.76px;
+    }
+}
+
+@media (min-width: 992px) {
+    .home-left {
+        max-width: 549px;
+    }
+
+    .home-right, .faq-right {
+        width: 100%;
+    }
 }
 
 .scroll-wrapper {
@@ -249,6 +303,7 @@ ul {
     padding: 0.5em 3em;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    display: none;
 }
 
 .features-controller li:hover {
@@ -259,6 +314,13 @@ ul {
     color: var(--primary);
     background-color: var(--primary-o);
     border-radius: 999px;
+    display: block;
+}
+
+@media (min-width: 762px) {
+    .features-controller li {
+        display: block;
+    }
 }
 
 .feature-img-wrapper {
@@ -335,29 +397,7 @@ ul {
 }
 
 /* gradienti di sfondo */
-.first-gradient {
-    border: 1px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 50%;
-    background: radial-gradient(at 70% -30%, var(--secondary-o), rgba(0,0,0,0), rgba(0,0,0,0));
-    aspect-ratio: 1/1;
-}
-
-.second-gradient {
-    border: 1px solid white;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 50%;
-    height: 50%;
-    background: radial-gradient(at 50% 50%, var(--primary-o), rgba(0,0,0,0));
-    aspect-ratio: 1/1;
-}
-
-.first-section-gradient {
+/* .first-section-gradient {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -400,4 +440,4 @@ ul {
     .third-section-gradient {
         background: radial-gradient(circle at 70% 50%, var(--secondary-o), rgba(0,0,0,0) 600px)
     }
-}
+} */
