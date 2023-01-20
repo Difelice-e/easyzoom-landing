@@ -218,7 +218,7 @@ ul {
 }
 
 .hamburger-menu {
-    width: 30px;
+    width: 50px;
 }
 
 .pseudo-element {
@@ -226,8 +226,11 @@ ul {
 }
 
 /* home section */
+#home {
+    padding-top: 130px;
+}
+
 #home, #faq {
-    padding-top: 100px;
     padding-left: 0;
 }
 
@@ -487,7 +490,8 @@ ul {
     }
 
     .third-section-gradient {
-        background: radial-gradient(circle at 70% 50%, var(--secondary-o), rgba(0,0,0,0) 600px)
+        background: radial-gradient(circle at 70% 50%, var(--secondary-o), rgba(0,0,0,0) 600px),
+                    radial-gradient(circle at 25% 20%, var(--primary-o), rgba(0,0,0,0) 420px)
     }
 }
 
