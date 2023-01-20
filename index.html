@@ -21,7 +21,7 @@
                         </div>
 
                         <!-- navbar with scrolldown links -->
-                        <div class="navbar">
+                        <div class="navbar d-none d-md-block">
                             <ul class="d-flex align-items-center gap-10">
                                 <li><a class="header-link" href="#home">Home</a></li>
                                 <li><a class="header-link" href="#features">Features</a></li>
@@ -40,11 +40,15 @@
 
     <!-- main content of the page, some section -->
     <main>
-        <!-- first section -->
-        <section id="home">
-                <div class="row g-0 mr-0 flex-grow-1 align-items-center pt-5">
+        <div class="relative">
+            <!-- <div class="first-gradient"></div>
+            <div class="second-gradient"></div> -->
+            <div class="first-section-gradient"></div>
+            <!-- first section -->
+            <section id="home">
+                <div class="row g-0 mr-md-0 flex-grow-1 align-items-center pt-5">
                     <!-- introducing easyzoom, cta -->
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <div class="home-left">
                             <div class="big-logo-wrapper mb-3">
                                 <img src="img/big-logo-easyzoom.png" alt="">
@@ -63,104 +67,115 @@
                         </div>
                     </div>
                     <!-- homepage img fixed right -->
-                    <div class="col-6 pr-0">
+                    <div class="col-12 col-md-6 pr-md-0">
                         <div class="home-right">
                             <img src="img/Content-HEADER.png" alt="">
                         </div>
                     </div>
                 </div>
-        </section>
-        <!-- features section -->
-        <section id="features">
-            <div class="container">
-                <div class="row align-items-center mb-5">
-                    <!-- inage of some section of website -->
-                    <div class="col-6">
-                        <div>
-                            <img src="img/Content-SEZ01.png" alt="">
-                        </div>
-                    </div>
-                    <!-- text sextion -->
-                    <div class="col-6">
-                        <div>
-                            <div class="section-title mb-3">
-                                <span>What is Easyzoom?</span>
+            </section>
+            <!-- features section -->
+            <section id="features">
+                <div class="container">
+                    <div class="row align-items-center mb-5">
+                        <!-- inage of some section of website -->
+                        <div class="col-6">
+                            <div>
+                                <img src="img/Content-SEZ01.png" alt="">
                             </div>
-                            <p class="mb-3">
-                                At Easyzoom, we believe in giving our users the tools they need to shape the future.
-                                We already provide you wih a robust and high-performing tool foundation and now, as a member of our DAO council
-                                you'll have a direct say in which features we add and how our tool evolves.
-                            </p>
-                            <p>
-                                By minting your own Easyzoom pass, you'll not only have a role in the evolution of the tool but also be rewarded
-                                for every future subscription to the tool enjoying a tangible reward.
-                            </p>
+                        </div>
+                        <!-- text sextion -->
+                        <div class="col-6">
+                            <div>
+                                <div class="section-title mb-3">
+                                    <span>What is Easyzoom?</span>
+                                </div>
+                                <p class="mb-3">
+                                    At Easyzoom, we believe in giving our users the tools they need to shape the future.
+                                    We already provide you wih a robust and high-performing tool foundation and now, as a member of our DAO council
+                                    you'll have a direct say in which features we add and how our tool evolves.
+                                </p>
+                                <p>
+                                    By minting your own Easyzoom pass, you'll not only have a role in the evolution of the tool but also be rewarded
+                                    for every future subscription to the tool enjoying a tangible reward.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <div class="d-flex justify-content-center my-5">
-                            <ul class="d-flex align-items-center gap-1 features-controller">
-                                <li class="active">Advanced analytics charts</li>
-                                <li>Discover the whales</li>
-                                <li>Get live feed data</li>
-                                <li>Wallet's history</li>
-                            </ul>
+            </section>
+        </div>
+        <div class="relative">
+            <div class="second-section-gradient"></div>
+            <section id="features-2">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="d-flex justify-content-center pb-3 mb-5">
+                                <ul class="d-flex align-items-center gap-1 features-controller">
+                                    <li class="active">Advanced analytics charts</li>
+                                    <li>Discover the whales</li>
+                                    <li>Get live feed data</li>
+                                    <li>Wallet's history</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="col-6">
-                        <div class="feature-img-wrapper">
-                            <img src="https://picsum.photos/800/600" alt="" id="carousel-img">
+    
+                        <div class="col-6">
+                            <div class="feature-img-wrapper">
+                                <img src="https://picsum.photos/800/600" alt="" id="carousel-img">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-6">
-                        <div>
-                            <p id="carousel-title" class="section-title-secondary mb-3">Get <span class="text-primary">live feed</span> data</p>
-                            <p id="carousel-text">
-                                Stay on top of the NFT market keeping track of every sale, transfer and mint. <br>
-                                Get instant alerts when important events occur.
-                            </p>
+                        <div class="col-6">
+                            <div>
+                                <p id="carousel-title" class="section-title-secondary mb-3">Get <span class="text-primary">live feed</span> data</p>
+                                <p id="carousel-text">
+                                    Stay on top of the NFT market keeping track of every sale, transfer and mint. <br>
+                                    Get instant alerts when important events occur.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- video section -->
-        <section id="video">
-            <div class="container">
-                <div class="col">
-                    <p class="section-title-secondary text-center mb-5">Take a <span class="text-primary">sneak peak</span> at the <span class="text-secondary">foundation</span></p>
-                    <div class="video-wrapper">
-                        <img src="https://picsum.photos/960/540" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- DAO section -->
-        <section id="dao">
-            <div class="container">
-                <div class="row">
+            </section>
+            <!-- video section -->
+            <section id="video">
+                <div class="container">
                     <div class="col">
-                        <p class="section-title-secondary text-center mb-5">DAO</p>
-                        <img src="img/Content-DAO.png" alt="">
+                        <p class="section-title-secondary text-center mb-5">Take a <span class="text-primary">sneak peak</span> at the <span class="text-secondary">foundation</span></p>
+                        <div class="video-wrapper">
+                            <img src="https://picsum.photos/960/540" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- schedule section -->
-        <section id="schedule">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <p class="section-title-secondary text-center mb-5">Our <span class="text-primary">schedule</span></p>
-                        <img src="img/Content-ROADMAP.png" alt="">
+            </section>
+            <!-- DAO section -->
+            <section id="dao">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="section-title-secondary text-center mb-5">DAO</p>
+                            <img src="img/Content-DAO.png" alt="">
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+        <div class="relative">
+            <div class="third-section-gradient"></div>
+            <!-- schedule section -->
+            <section id="schedule">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="section-title-secondary text-center mb-5">Our <span class="text-primary">schedule</span></p>
+                            <img src="img/Content-ROADMAP.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
         <!-- whitepaper section -->
         <section id="whitepaper">
             <div class="container">
@@ -187,27 +202,27 @@
                             <ul class="faq-list">
                                 <li>
                                     <p class="d-flex align-items-center gap-3"><span class="symbol"></span> What is Easyzoom?</p>
-                                    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae, placeat soluta maiores qui cumque veniam. Culpa, dolorum. Labore, doloremque.</div>
+                                    <div class="answer">Easyzoom is an NFT analysis tool that provides advanced analytics and visualization capabilities, allowing users to easily understand and interpret the data. As a member of our DAO, you'll have a direct say in which features we add and how our tool evolves, also you'll be rewarded for every future subscription to the tool and NFTs flips.</div>
                                 </li>
                                 <li>
                                     <p class="d-flex align-items-center gap-3"><span class="symbol"></span> What are the requirements to join the Easyzoom DAO?</p>
-                                    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae, placeat soluta maiores qui cumque veniam. Culpa, dolorum. Labore, doloremque.</div>
+                                    <div class="answer">To join our DAO, you'll need to purchase an Easyzoom pass, which is a lifetime NFT that grants you access to the DAO and its benefits. Additionally, you'll need to stake your NFT to ensure proper protection and valorization of the NFTs.</div>
                                 </li>
                                 <li>
                                     <p class="d-flex align-items-center gap-3"><span class="symbol"></span> Are the founds of the DAO transparent?</p>
-                                    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae, placeat soluta maiores qui cumque veniam. Culpa, dolorum. Labore, doloremque.</div>
+                                    <div class="answer">Yes, the funds of the DAO will always be visible on the dashboard, providing complete transparency and oversight at all times.</div>
                                 </li>
                                 <li>
                                     <p class="d-flex align-items-center gap-3"><span class="symbol"></span> What is the community wallet and how does it work?</p>
-                                    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae, placeat soluta maiores qui cumque veniam. Culpa, dolorum. Labore, doloremque.</div>
+                                    <div class="answer">The community wallet is a shared wallet managed by the DAO which receives funds from different sources like NFT minting, royalties, subscription service revenue and NFT flipping. These funds are then used to purchase NFTs and perform other operations as decided by the members of the DAO.</div>
                                 </li>
                                 <li>
                                     <p class="d-flex align-items-center gap-3"><span class="symbol"></span> Can i sell my Easyzoom pass after purchasing it?</p>
-                                    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae, placeat soluta maiores qui cumque veniam. Culpa, dolorum. Labore, doloremque.</div>
+                                    <div class="answer">Yes, you can sell your Easyzoom pass at any time, but keep in mind that if you do, you'll lose the ability to claim the profit and it will be absorbed by the treasury. Additionally, the new holder will only be able to redeem the dividend for its holding period. The whole thing is based on a staking mechanism.</div>
                                 </li>
                                 <li>
                                     <p class="d-flex align-items-center gap-3"><span class="symbol"></span> How often can i claim my share of the profits?</p>
-                                    <div class="answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit recusandae, placeat soluta maiores qui cumque veniam. Culpa, dolorum. Labore, doloremque.</div>
+                                    <div class="answer">The staking system that will be based on a quarterly or biannual basis. This will allow for regular rewards to be distributed to members. However, to do so, you’ll need to stake your NFT, this way you will ensure a proper protection and valorization of the NFTs.</div>
                                 </li>
                             </ul>
                         </div>

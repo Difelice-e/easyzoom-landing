@@ -38,22 +38,22 @@ window.addEventListener("scroll", function() {
 const data = [
   {
     title: `Advanced <span class="text-primary">analytics</span> chart`,
-    text: `Stay on top of the NFT market keeping track of every sale, transfer and mint. <br> Get instant alerts when important events occur.`,
+    text: `Unlock the power of data with our deep dive into sales history, floor price, volume, and trends.`,
     img: 'https://picsum.photos/800/600',  
   },
   {
     title: `Discover the <span class="text-primary">whales</span>`,
-    text: `Stay on top of the NFT market keeping track of every sale, transfer and mint. <br> Get instant alerts when important events occur.`,
+    text: `Discover the NFTs biggest players and see which NFTs they are buying and selling with our exclusive whale tracking features.`,
     img: 'https://picsum.photos/800/600',  
   },
   {
     title: `Get <span class="text-primary">live feed</span> data`,
-    text: `Stay on top of the NFT market keeping track of every sale, transfer and mint. <br> Get instant alerts when important events occur.`,
+    text: `Stay on top of the NFT market keeping track of every sale, transfer, and mint. Get instant alerts when important events occur.`,
     img: 'https://picsum.photos/800/600',  
   },
   {
     title: `Wallet <span class="text-primary">historys</span>`,
-    text: `Stay on top of the NFT market keeping track of every sale, transfer and mint. <br> Get instant alerts when important events occur.`,
+    text: `Easily sift through each wallet to see which NFTs are being bought and sold, and watch as the profits roll in.`,
     img: 'https://picsum.photos/800/600',  
   },
 ]
