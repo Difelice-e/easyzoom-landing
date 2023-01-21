@@ -34,6 +34,16 @@ window.addEventListener("scroll", function() {
   }
 });
 
+// header hamburger menù
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const navbar = document.querySelector('.menu');
+
+hamburgerMenu.addEventListener('click', () => {
+  navbar.classList.toggle('active')
+});
+
+
+
 // codice carosello
 const data = [
   {
