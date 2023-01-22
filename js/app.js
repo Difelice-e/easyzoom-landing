@@ -36,11 +36,18 @@ window.addEventListener("scroll", function() {
 
 // header hamburger menù
 const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuItems = document.querySelectorAll('.header-link')
 const navbar = document.querySelector('.menu');
 
 hamburgerMenu.addEventListener('click', () => {
   navbar.classList.toggle('active')
 });
+
+menuItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navbar.classList.remove('active')
+  });
+})
 
 
 
