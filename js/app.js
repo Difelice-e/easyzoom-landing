@@ -4,25 +4,41 @@ if (location.hash) {
 
 // header animation on scroll
 // Recupera tutti i link del header
-var links = document.querySelectorAll("header a");
+var links = document.querySelectorAll(".header-link");
+
+// imposta home come primo link attivo
+links[0].classList.add('active')
 
 // Recupera tutte le sezioni della pagina
-var sections = document.querySelectorAll("section");
+var sections = document.querySelectorAll("section:not(#features-2)");
 
 // Ascolta l'evento scroll
 window.addEventListener("scroll", function() {
   // Calcola la posizione dello scroll
-  var scrollPosition = window.pageYOffset;
+  var scrollPosition = window.pageYOffset + 50;
 
   // Itera attraverso tutte le sezioni
   for (var i = 0; i < sections.length; i++) {
     var section = sections[i];
-    var sectionTop = section.offsetTop - 50;
-    var sectionBottom = sectionTop + section.offsetHeight;
+
+    if (i === 0) {
+      var sectionTop = section.offsetTop;
+      var sectionBottom = sectionTop + section.offsetHeight;
+    } else {
+      if (section.id !== 'features') {
+        sectionTop = sectionBottom
+        var sectionBottom = sectionTop + section.offsetHeight;
+      } else {
+        var secondSection = document.querySelector('#features-2');
+        var sectionTop = sectionBottom
+        var sectionBottom = sectionTop + section.offsetHeight + secondSection.offsetHeight
+      } 
+    }
 
     // Controlla se la posizione dello scroll si trova all'interno della sezione corrente
     if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
       // Rimuove la classe active dai link del header
+      // console.log('active',section.id)
       for (var j = 0; j < links.length; j++) {
         links[j].classList.remove("active");
       }
@@ -117,8 +133,6 @@ carouselArea.addEventListener('mouseenter', () => {
 carouselArea.addEventListener('mouseleave', () => {
   startInterval();
 });
-
-console.log(carouselLinks)
 
 carouselLinks.forEach((link, index) => {
   link.addEventListener('click', () => {
