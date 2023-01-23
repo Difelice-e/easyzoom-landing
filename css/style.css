@@ -56,6 +56,10 @@ section {
     position: relative;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .text-sm-center {
     text-align: center;
 }
@@ -244,7 +248,7 @@ ul {
     border-bottom: 1px solid var(--white-o);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar {
         position: initial;
         display: flex;
@@ -254,7 +258,7 @@ ul {
     .navbar .menu {
         flex-direction: row;
         align-items: center;
-        gap: 50px;
+        gap: 25px;
         background-color: transparent;
         max-height: 500px;
         max-width: 100%;
@@ -271,6 +275,12 @@ ul {
 
     .navbar .menu li:not(:last-child) {
         border-bottom: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar .menu {
+        gap: 50px;
     }
 }
 
@@ -444,9 +454,9 @@ ul {
 
 /* mint section */
 #mint {
-    background-color: #313339;
+    /* background-color: #313339;
     padding-top: 75px;
-    padding-bottom: 200px;
+    padding-bottom: 200px; */
 }
 
 #mint ul {
@@ -456,8 +466,8 @@ ul {
 
 /* whitepaper section */
 #whitepaper {
-    padding: 0;
-    transform: translateY(-50%);
+    /* padding: 0;
+    transform: translateY(-50%); */
 }
 
 .whitepaper-wrapper {
@@ -474,7 +484,7 @@ ul {
 
 /* faq section */
 #faq {
-    padding: 0;
+    /* padding: 0; */
 }
 
 .faq-list li {
@@ -545,7 +555,7 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    background: radial-gradient(circle at 66% 64%, var(--secondary-o), rgba(0,0,0,0) 300px)
+    background: radial-gradient(circle at 66% 64%, var(--secondary-o), rgba(0,0,0,0) 350px)
 }
 
 @media (min-width: 768px) {
@@ -556,7 +566,7 @@ ul {
         left: 0;
         right: 0;
         background: radial-gradient(circle at 80% -10%, var(--secondary-o), rgba(0,0,0,0) 600px),
-                    radial-gradient(circle at 25% 65%, var(--primary-o), rgba(0,0,0,0) 550px)
+                    radial-gradient(circle at 25% 65%, var(--primary-o), rgba(0,0,0,0) 450px)
     }
     
     .second-section-gradient {
@@ -575,15 +585,15 @@ ul {
         bottom: 0;
         left: 0;
         right: 0;
-        background: radial-gradient(circle at 85% 33%, var(--secondary-o), rgba(0,0,0,0) 500px),
-                    radial-gradient(circle at 15% 20%, var(--primary-o), rgba(0,0,0,0) 420px)
+        background: radial-gradient(circle at 85% 27%, var(--secondary-o), rgba(0,0,0,0) 500px),
+                    radial-gradient(circle at 15% 17%, var(--primary-o), rgba(0,0,0,0) 420px)
     }
 }
 
 @media (min-width: 2200px) {
     .first-section-gradient {
         background: radial-gradient(circle at 70% -10%, var(--secondary-o), rgba(0,0,0,0) 700px),
-                    radial-gradient(circle at 35% 65%, var(--primary-o), rgba(0,0,0,0) 700px)
+                    radial-gradient(circle at 35% 65%, var(--primary-o), rgba(0,0,0,0) 650px)
     }
 
     .second-section-gradient {
@@ -592,8 +602,8 @@ ul {
     }
 
     .third-section-gradient {
-        background: radial-gradient(circle at 70% 50%, var(--secondary-o), rgba(0,0,0,0) 600px),
-                    radial-gradient(circle at 25% 20%, var(--primary-o), rgba(0,0,0,0) 420px)
+        background: radial-gradient(circle at 70% 25%, var(--secondary-o), rgba(0,0,0,0) 600px),
+                    radial-gradient(circle at 25% 14%, var(--primary-o), rgba(0,0,0,0) 420px)
     }
 }
 
