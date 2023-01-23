@@ -52,13 +52,15 @@ window.addEventListener("scroll", function() {
 
 // header hamburger menù
 const hamburgerMenu = document.querySelector('.hamburger-menu');
-const menuItems = document.querySelectorAll('.header-link')
+const menuItems = document.querySelectorAll('.header-link');
 const navbar = document.querySelector('.navbar');
-const returnTop = document.querySelector('.return-top')
+const returnTop = document.querySelector('.return-top');
+const header = document.querySelector('header')
 
 hamburgerMenu.addEventListener('click', () => {
   navbar.classList.toggle('active')
   returnTop.classList.toggle('hidden')
+  header.classList.toggle('open-menu')
 });
 
 menuItems.forEach(item => {

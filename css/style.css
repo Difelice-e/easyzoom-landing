@@ -186,6 +186,10 @@ header {
     left: 0;
 }
 
+header.open-menu {
+    background-color: rgba(32, 34, 37, 1);
+}
+
 .logo-wrapper {
     max-width: 170px;
 }
@@ -206,7 +210,7 @@ ul {
 
 .navbar {
     position: fixed;
-    top: 108px;
+    top: 107px;
     left: 0;
     right: 0;
     height: 0;
