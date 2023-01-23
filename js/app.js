@@ -15,7 +15,7 @@ var sections = document.querySelectorAll("section:not(#features-2)");
 // Ascolta l'evento scroll
 window.addEventListener("scroll", function() {
   // Calcola la posizione dello scroll
-  var scrollPosition = window.pageYOffset + 50;
+  var scrollPosition = window.pageYOffset + 300;
 
   // Itera attraverso tutte le sezioni
   for (var i = 0; i < sections.length; i++) {
@@ -53,7 +53,7 @@ window.addEventListener("scroll", function() {
 // header hamburger menù
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menuItems = document.querySelectorAll('.header-link')
-const navbar = document.querySelector('.menu');
+const navbar = document.querySelector('.navbar');
 
 hamburgerMenu.addEventListener('click', () => {
   navbar.classList.toggle('active')
