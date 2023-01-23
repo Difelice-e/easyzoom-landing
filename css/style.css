@@ -235,7 +235,7 @@ ul {
     max-width: 100%;
 }
 
-.navbar .menu li {
+.navbar .menu>li {
     flex-grow: 1;
     display: flex;
     align-items: center;
@@ -586,7 +586,8 @@ ul {
         left: 0;
         right: 0;
         background: radial-gradient(circle at 85% 27%, var(--secondary-o), rgba(0,0,0,0) 500px),
-                    radial-gradient(circle at 15% 17%, var(--primary-o), rgba(0,0,0,0) 420px)
+                    radial-gradient(circle at 15% 17%, var(--primary-o), rgba(0,0,0,0) 480px),
+                    radial-gradient(circle at 15% 65%, var(--primary-o), rgba(0,0,0,0) 480px)
     }
 }
 
@@ -603,7 +604,8 @@ ul {
 
     .third-section-gradient {
         background: radial-gradient(circle at 70% 25%, var(--secondary-o), rgba(0,0,0,0) 600px),
-                    radial-gradient(circle at 25% 14%, var(--primary-o), rgba(0,0,0,0) 420px)
+                    radial-gradient(circle at 25% 14%, var(--primary-o), rgba(0,0,0,0) 470px),
+                    radial-gradient(circle at 25% 60%, var(--primary-o), rgba(0,0,0,0) 470px)
     }
 }
 
@@ -621,4 +623,8 @@ ul {
     align-items: center;
     justify-content: center;
     z-index: 9999;
+}
+
+.return-top.hidden {
+    display: none !important;
 }

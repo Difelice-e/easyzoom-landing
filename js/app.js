@@ -54,14 +54,17 @@ window.addEventListener("scroll", function() {
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menuItems = document.querySelectorAll('.header-link')
 const navbar = document.querySelector('.navbar');
+const returnTop = document.querySelector('.return-top')
 
 hamburgerMenu.addEventListener('click', () => {
   navbar.classList.toggle('active')
+  returnTop.classList.toggle('hidden')
 });
 
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
     navbar.classList.remove('active')
+    returnTop.classList.add('hidden')
   });
 })
 
