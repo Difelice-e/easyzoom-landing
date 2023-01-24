@@ -71,8 +71,6 @@ menuItems.forEach(item => {
   });
 })
 
-
-
 // codice carosello
 const data = [
   {
@@ -176,15 +174,15 @@ faqs.forEach(function(faq) {
       openFaq.querySelector('.answer').style.maxHeight = "0";
       openFaq.querySelector('.answer').style.height = "0";
     } else {
-        if (openFaq) {
-          openFaq.classList.remove('open');
-          openFaq.querySelector('.answer').style.maxHeight = "0";
-          openFaq.querySelector('.answer').style.height = "0"; 
-        }
-        this.classList.add('open');
-        this.querySelector('.answer').style.maxHeight = "500px";
-        this.querySelector('.answer').style.height = this.querySelector('.answer').scrollHeight + "px";
+      if (openFaq) {
+        openFaq.classList.remove('open');
+        openFaq.querySelector('.answer').style.maxHeight = "0";
+        openFaq.querySelector('.answer').style.height = "0"; 
       }
+      this.classList.add('open');
+      this.querySelector('.answer').style.maxHeight = "500px";
+      this.querySelector('.answer').style.height = this.querySelector('.answer').scrollHeight + "px";
+    }
   });
 });
 
@@ -192,18 +190,18 @@ faqs.forEach(function(faq) {
 const items = document.querySelectorAll('.social-link');
 
 items.forEach(item => {
-    item.addEventListener('mouseover', () => {
-        items.forEach(otherItem => {
-            if (otherItem !== item) {
-                otherItem.classList.add('transition');
-                otherItem.style.filter = 'invert(53%) sepia(6%) saturate(16%) hue-rotate(338deg) brightness(93%) contrast(87%)';
-            }
-        });
+  item.addEventListener('mouseover', () => {
+    items.forEach(otherItem => {
+      if (otherItem !== item) {
+        otherItem.classList.add('transition');
+        otherItem.style.filter = 'invert(53%) sepia(6%) saturate(16%) hue-rotate(338deg) brightness(93%) contrast(87%)';
+      }
     });
-    item.addEventListener('mouseout', () => {
-        items.forEach(otherItem => {
-            otherItem.classList.add('transition');
-            otherItem.style.filter = 'invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%)';
-        });
+  });
+  item.addEventListener('mouseout', () => {
+    items.forEach(otherItem => {
+      otherItem.classList.add('transition');
+      otherItem.style.filter = 'invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%)';
     });
+  });
 });
