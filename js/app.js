@@ -58,15 +58,16 @@ const returnTop = document.querySelector('.return-top');
 const header = document.querySelector('header')
 
 hamburgerMenu.addEventListener('click', () => {
-  navbar.classList.toggle('active')
-  returnTop.classList.toggle('hidden')
-  header.classList.toggle('open-menu')
+  navbar.classList.toggle('active');
+  returnTop.classList.toggle('hidden');
+  header.classList.toggle('open-menu');
 });
 
 menuItems.forEach(item => {
   item.addEventListener('click', () => {
-    navbar.classList.remove('active')
-    returnTop.classList.add('hidden')
+    navbar.classList.remove('active');
+    returnTop.classList.add('hidden');
+    header.classList.remove('open-menu');
   });
 })
 
