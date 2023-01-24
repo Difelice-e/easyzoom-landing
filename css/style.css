@@ -171,6 +171,10 @@ section {
 
 .icon.icon-primary {
     filter: invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%);
+    -webkit-filter: invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%);
+    -o-filter: invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%); 
+    -moz-filter: invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%); 
+    -ms-filter: invert(48%) sepia(68%) saturate(809%) hue-rotate(139deg) brightness(99%) contrast(102%); 
 }
 /* header style */
 header {
@@ -384,6 +388,10 @@ ul {
     background-color: white;
     border-radius: 50%; 
     animation: scroll 2s infinite; 
+    -webkit-animation: scroll 2s infinite;
+    -o-animation: scroll 2s infinite; 
+    -moz-animation: scroll 2s infinite; 
+    -ms-animation: scroll 2s infinite; 
     opacity: 1;
 }
 
@@ -448,6 +456,10 @@ ul {
     border-radius: 25px;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(7px);
+    -moz-backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    -o-backdrop-filter: blur(7px);
+    -ms-backdrop-filter: blur(7px);
     z-index: 99;
 }
 
