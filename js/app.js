@@ -133,7 +133,7 @@ function startInterval() {
   intervalId = setInterval(() => {
     currentIndex = (currentIndex + 1) % data.length;
     setActive(currentIndex);
-  }, 3000);
+  }, 6000);
 }
 
 startInterval();
