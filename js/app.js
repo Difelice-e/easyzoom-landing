@@ -129,23 +129,6 @@ function setActive(index) {
   })
 }
 
-function startInterval() {
-  intervalId = setInterval(() => {
-    currentIndex = (currentIndex + 1) % data.length;
-    setActive(currentIndex);
-  }, 6000);
-}
-
-startInterval();
-
-carouselArea.addEventListener('mouseenter', () => {
-  clearInterval(intervalId);
-});
-
-carouselArea.addEventListener('mouseleave', () => {
-  startInterval();
-});
-
 carouselLinks.forEach((link, index) => {
   link.addEventListener('click', () => {
     currentIndex = index;
