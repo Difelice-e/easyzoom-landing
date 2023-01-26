@@ -435,10 +435,15 @@ ul {
 }
 
 .feature-img-wrapper {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 25px;
-    padding: 25px;
+    padding: 15px;
     background: linear-gradient(to right top, var(--primary-o), var(--secondary-o));
+}
+
+.feature-img-wrapper video {
+    border-radius: 25px;
+    display: block;
 }
 
 #carousel-video, #carousel-title, #carousel-text {
@@ -448,6 +453,10 @@ ul {
 
 #carousel-video.fade-out {
     opacity: 0;
+}
+
+#carousel-video video {
+    border-radius: 25px;
 }
 
 .prev, .next {
@@ -466,6 +475,10 @@ ul {
     -o-backdrop-filter: blur(7px);
     -ms-backdrop-filter: blur(7px);
     z-index: 99;
+}
+
+.video-wrapper video {
+    border-radius: 25px;
 }
 
 /* schedule section */
