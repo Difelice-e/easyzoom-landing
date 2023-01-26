@@ -76,29 +76,29 @@ const data = [
   {
     title: `Advanced <span class="text-primary">analytics</span> chart`,
     text: `Unlock the power of data with our deep dive into sales history, floor price, volume, and trends.`,
-    img: 'https://picsum.photos/800/600',  
+    video: 'video/table.mp4',  
   },
   {
     title: `Discover the <span class="text-primary">whales</span>`,
     text: `Discover the NFTs biggest players and see which NFTs they are buying and selling with our exclusive whale tracking features.`,
-    img: 'https://picsum.photos/800/600',  
+    video: 'video/analytics.mp4',  
   },
   {
     title: `Get <span class="text-primary">live feed</span> data`,
     text: `Stay on top of the NFT market keeping track of every sale, transfer, and mint. Get instant alerts when important events occur.`,
-    img: 'https://picsum.photos/800/600',  
+    video: 'video/holders.mp4',  
   },
   {
     title: `Wallet <span class="text-primary">historys</span>`,
     text: `Easily sift through each wallet to see which NFTs are being bought and sold, and watch as the profits roll in.`,
-    img: 'https://picsum.photos/800/600',  
+    video: 'video/wallet-feed.mp4',  
   },
 ]
 
 const carousel = document.querySelector('.features-controller');
 const carouselArea = document.querySelector('#features-2');
 const carouselTitle = document.querySelector('#carousel-title');
-const carouselImg = document.querySelector('#carousel-img');
+const carouselVideo = document.querySelector('#carousel-video');
 const carouselText = document.querySelector('#carousel-text');
 const carouselLinks = carousel.querySelectorAll('li');
 const prev = document.querySelector('.prev');
@@ -112,7 +112,7 @@ function setActive(index) {
   carouselLinks.forEach((link, i) => {
     if (i === index) {
       link.classList.add('active');
-      carouselImg.src = data[i].img;
+      carouselVideo.src = data[i].video;
       carouselTitle.innerHTML = data[i].title;
       carouselText.innerHTML = data[i].text;
     } else {
