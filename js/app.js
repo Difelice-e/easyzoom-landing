@@ -112,9 +112,17 @@ function setActive(index) {
   carouselLinks.forEach((link, i) => {
     if (i === index) {
       link.classList.add('active');
-      carouselVideo.src = data[i].video;
-      carouselTitle.innerHTML = data[i].title;
-      carouselText.innerHTML = data[i].text;
+      carouselVideo.classList.add('fade-out')
+      setTimeout(() => {
+        console.log(data[i].video)
+        carouselVideo.src = data[i].video;
+        carouselTitle.innerHTML = data[i].title;
+        carouselText.innerHTML = data[i].text;
+      }, 300)
+      setTimeout(() => {
+        carouselVideo.classList.remove('fade-out')
+      }, 300)
+      
     } else {
       link.classList.remove('active');
     }
