@@ -435,10 +435,11 @@ ul {
 }
 
 .feature-img-wrapper {
-    /* border: 1px solid white; */
+    width: 100%;
     border-radius: 25px;
     padding: 15px;
     background: linear-gradient(to right top, var(--primary-o), var(--secondary-o));
+    aspect-ratio: 1.7;
 }
 
 .feature-img-wrapper video {
