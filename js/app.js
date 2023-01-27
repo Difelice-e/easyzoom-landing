@@ -104,6 +104,8 @@ const carouselLinks = carousel.querySelectorAll('li');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 
+console.log(carouselVideo.controls)
+
 let intervalId;
 
 let currentIndex = 0;

@@ -451,6 +451,14 @@ ul {
     opacity: 1;
 }
 
+video::-webkit-media-controls-volume-slider {
+    display:none;
+}
+
+video::-webkit-media-controls-mute-button {
+    display:none;
+}
+
 #carousel-video.fade-out {
     opacity: 0;
 }
@@ -579,8 +587,8 @@ ul {
     bottom: 0;
     left: 0;
     right: 0;
-    background: radial-gradient(circle at 90% 45%, var(--secondary-o), rgba(0,0,0,0) 320px),
-                radial-gradient(circle at 10% 35%, var(--primary-o), rgba(0,0,0,0) 320px)
+    background: radial-gradient(circle at 90% 40%, var(--secondary-o), rgba(0,0,0,0) 320px),
+                radial-gradient(circle at 10% 20%, var(--primary-o), rgba(0,0,0,0) 320px)
 }
 
 .third-section-gradient {
@@ -600,7 +608,7 @@ ul {
         left: 0;
         right: 0;
         background: radial-gradient(circle at 80% -10%, var(--secondary-o), rgba(0,0,0,0) 600px),
-                    radial-gradient(circle at 25% 65%, var(--primary-o), rgba(0,0,0,0) 450px)
+                    radial-gradient(circle at 25% 65%, var(--primary-o), rgba(0,0,0,0) 425px)
     }
     
     .second-section-gradient {
@@ -609,8 +617,8 @@ ul {
         bottom: 0;
         left: 0;
         right: 0;
-        background: radial-gradient(circle at 90% 30%, var(--secondary-o), rgba(0,0,0,0) 600px),
-                    radial-gradient(circle at 10% 50%, var(--primary-o), rgba(0,0,0,0) 600px)
+        background: radial-gradient(circle at 80% 60%, var(--secondary-o), rgba(0,0,0,0) 470px),
+                    radial-gradient(circle at 25% 40%, var(--primary-o), rgba(0,0,0,0) 470px)
     }
     
     .third-section-gradient {
@@ -619,26 +627,26 @@ ul {
         bottom: 0;
         left: 0;
         right: 0;
-        background: radial-gradient(circle at 85% 27%, var(--secondary-o), rgba(0,0,0,0) 500px),
-                    radial-gradient(circle at 15% 17%, var(--primary-o), rgba(0,0,0,0) 480px),
-                    radial-gradient(circle at 15% 65%, var(--primary-o), rgba(0,0,0,0) 480px)
+        background: radial-gradient(circle at 85% 27%, var(--secondary-o), rgba(0,0,0,0) 450px),
+                    radial-gradient(circle at 15% 19%, var(--primary-o), rgba(0,0,0,0) 450px),
+                    radial-gradient(circle at 15% 65%, var(--primary-o), rgba(0,0,0,0) 450px)
     }
 }
 
 @media (min-width: 2200px) {
     .first-section-gradient {
-        background: radial-gradient(circle at 70% -10%, var(--secondary-o), rgba(0,0,0,0) 700px),
-                    radial-gradient(circle at 35% 65%, var(--primary-o), rgba(0,0,0,0) 650px)
+        background: radial-gradient(circle at 70% -10%, var(--secondary-o), rgba(0,0,0,0) 600px),
+                    radial-gradient(circle at 35% 55%, var(--primary-o), rgba(0,0,0,0) 550px)
     }
 
     .second-section-gradient {
-        background: radial-gradient(circle at 70% 30%, var(--secondary-o), rgba(0,0,0,0) 700px),
-                    radial-gradient(circle at 30% 50%, var(--primary-o), rgba(0,0,0,0) 700px)
+        background: radial-gradient(circle at 70% 70%, var(--secondary-o), rgba(0,0,0,0) 550px),
+                    radial-gradient(circle at 30% 40%, var(--primary-o), rgba(0,0,0,0) 550px)
     }
 
     .third-section-gradient {
-        background: radial-gradient(circle at 70% 25%, var(--secondary-o), rgba(0,0,0,0) 600px),
-                    radial-gradient(circle at 25% 14%, var(--primary-o), rgba(0,0,0,0) 470px),
+        background: radial-gradient(circle at 70% 27%, var(--secondary-o), rgba(0,0,0,0) 500px),
+                    radial-gradient(circle at 25% 17%, var(--primary-o), rgba(0,0,0,0) 470px),
                     radial-gradient(circle at 25% 60%, var(--primary-o), rgba(0,0,0,0) 470px)
     }
 }
