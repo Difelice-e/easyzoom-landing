@@ -74,23 +74,23 @@ menuItems.forEach(item => {
 // codice carosello
 const data = [
   {
-    title: `Advanced <span class="text-primary">analytics</span> chart`,
-    text: `Unlock the power of data with our deep dive into sales history, floor price, volume, and trends.`,
+    title: `The fastest <span class="text-primary">dashboard</span> ever`,
+    text: `Analyze what's trending with a fully sortable, live-updated table. We're committed to providing instant interactivity, no loading time, and no limit to the number of collections shown. There are also some unique parameters... you'll find out later.`,
     video: 'video/table.mp4',  
   },
   {
-    title: `Discover the <span class="text-primary">whales</span>`,
-    text: `Discover the NFTs biggest players and see which NFTs they are buying and selling with our exclusive whale tracking features.`,
+    title: `Simple and <span class="text-primary">advanced</span> charts`,
+    text: `Unlock the power of data with our deep dive into sales history, floor price, volume, buyers, and trends. No data is lost and everything is stored, so the history of the collections is complete.`,
     video: 'video/analytics.mp4',  
   },
   {
-    title: `Get <span class="text-primary">live feed</span> data`,
-    text: `Stay on top of the NFT market keeping track of every sale, transfer, and mint. Get instant alerts when important events occur.`,
+    title: `Analyze to the <span class="text-primary">core</span>`,
+    text: `Analyze holders and minters, through an instant dashboard you can scroll through the thousands of holders and minters, finally now you can do it with in an easy and intuitive way.`,
     video: 'video/holders.mp4',  
   },
   {
-    title: `Wallet <span class="text-primary">historys</span>`,
-    text: `Easily sift through each wallet to see which NFTs are being bought and sold, and watch as the profits roll in.`,
+    title: `Comprehensive analysis of<span class="text-primary">each</span> wallet`,
+    text: `Easily sift through each wallet and watch as the profits (loss) roll in. All tracked transactions are used to create an amazing dashboard with plenty of data for each wallet. `,
     video: 'video/wallet-feed.mp4',  
   },
 ]
