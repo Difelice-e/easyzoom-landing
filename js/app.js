@@ -89,7 +89,7 @@ const data = [
     video: 'video/holders.mp4',  
   },
   {
-    title: `Comprehensive analysis of <span class="text-primary">each</span> wallet`,
+    title: `Comprehensive analysis of <span class="text-primary"> each</span> wallet`,
     text: `Easily sift through each wallet and watch as the profits (loss) roll in. All tracked transactions are used to create an amazing dashboard with plenty of data for each wallet. `,
     video: 'video/wallet-feed.mp4',  
   },
