@@ -452,13 +452,13 @@ ul {
     opacity: 1;
 }
 
-video::-webkit-media-controls-volume-slider {
+/* video::-webkit-media-controls-volume-slider {
     display:none;
 }
 
 video::-webkit-media-controls-mute-button {
     display:none;
-}
+} */
 
 #carousel-video.fade-out {
     opacity: 0;
@@ -496,23 +496,12 @@ video::-webkit-media-controls-mute-button {
 }
 
 /* mint section */
-#mint {
-    /* background-color: #313339;
-    padding-top: 75px;
-    padding-bottom: 200px; */
-}
-
 #mint ul {
     font-weight: 700;
     font-size: 1.2em;
 }
 
 /* whitepaper section */
-#whitepaper {
-    /* padding: 0;
-    transform: translateY(-50%); */
-}
-
 .whitepaper-wrapper {
     display: flex;
     flex-direction: column;
@@ -526,10 +515,6 @@ video::-webkit-media-controls-mute-button {
 }
 
 /* faq section */
-#faq {
-    /* padding: 0; */
-}
-
 .faq-list li {
     padding: 20px;
     border-radius: 20px;
