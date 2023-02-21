@@ -501,6 +501,10 @@ video::-webkit-media-controls-mute-button {
     font-size: 1.2em;
 }
 
+#mint video {
+    width: 100%;
+}
+
 /* whitepaper section */
 .whitepaper-wrapper {
     display: flex;
