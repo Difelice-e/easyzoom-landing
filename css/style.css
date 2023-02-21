@@ -45,6 +45,11 @@ img {
     object-fit: contain;
 }
 
+video {
+    width: 100%;
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: currentColor;
@@ -475,8 +480,8 @@ video::-webkit-media-controls-mute-button {
 
 /* video section */
 .video-wrapper {
-    padding: 25px;
-    border-radius: 25px;
+    padding: 8px;
+    border-radius: 8px;
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(7px);
     -moz-backdrop-filter: blur(7px);
@@ -487,7 +492,18 @@ video::-webkit-media-controls-mute-button {
 }
 
 .video-wrapper video {
-    border-radius: 25px;
+    border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+    .video-wrapper {
+        padding: 25px;
+        border-radius: 25px;
+    }
+
+    .video-wrapper video {
+        border-radius: 25px;
+    }
 }
 
 /* schedule section */
@@ -499,12 +515,6 @@ video::-webkit-media-controls-mute-button {
 #mint ul {
     font-weight: 700;
     font-size: 1.2em;
-}
-
-#mint video {
-    width: 100%;
-    border-radius: 25px;
-    /* box-shadow: 5px 5px 8px 3px rgba(26, 26, 26, 0.7); */
 }
 
 /* whitepaper section */
