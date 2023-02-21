@@ -503,8 +503,8 @@ video::-webkit-media-controls-mute-button {
 
 #mint video {
     width: 100%;
-    border-radius: 20px;
-    box-shadow: 5px 5px 8px 3px rgba(26, 26, 26, 0.7);
+    border-radius: 25px;
+    /* box-shadow: 5px 5px 8px 3px rgba(26, 26, 26, 0.7); */
 }
 
 /* whitepaper section */
