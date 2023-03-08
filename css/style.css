@@ -10,6 +10,9 @@
     --secondary-o: rgba(188, 0, 166, 0.3);
     --white-o: rgba(229, 232, 235, 0.3);
     --grey-o: rgba(127, 127, 127, 0.3);
+
+    --primary-oo: rgba(0,184,191,0.075);
+    --secondary-oo: rgba(188,0,166,0.075);
 }
 
 /* local font */
@@ -80,7 +83,6 @@ section {
 }
 
 .section-title {
-    /* background-color: var(--primary-o); */
     background: linear-gradient(var(--primary-o), var(--primary-oo));
     color: var(--primary);
     border-radius: 999px;
