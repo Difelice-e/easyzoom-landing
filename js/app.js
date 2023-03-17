@@ -2,6 +2,10 @@ if (location.hash) {
     history.replaceState("", document.title, location.pathname);
 }
 
+const MINT_DATE = "2023-03-29 18:00:00"
+let mintDateLocal = moment.utc(MINT_DATE).local().format("DD MMMM HH:mm")
+document.getElementById("mint-date").innerText = mintDateLocal
+
 // header animation on scroll
 // Recupera tutti i link del header
 var links = document.querySelectorAll(".header-link");
