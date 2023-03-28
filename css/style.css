@@ -88,8 +88,19 @@ section {
     border-radius: 999px;
     padding: 0.5em 3em;
     display: inline-block;
+    border: 1px solid transparent;
 }
-
+.section-title.fake-button {
+    cursor: pointer;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+.section-title.fake-button:hover {
+    border: 1px solid var(--primary);
+}
+.section-title.fake-button.disabled {
+    cursor: not-allowed;
+}
 .section-title-secondary {
     font-size: 1.2em;
     font-weight: 600;
