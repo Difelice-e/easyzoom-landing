@@ -587,17 +587,30 @@ video::-webkit-media-controls-mute-button {
 
 /* gradienti di sfondo */
 .first-section-gradient {
+    z-index: -2;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
+    background-repeat: no-repeat;
     background: radial-gradient(circle at 80% -10%, var(--secondary-o), rgba(0,0,0,0) 550px),
                 radial-gradient(circle at 20% 35%, var(--primary-o), rgba(0,0,0,0) 320px),
                 radial-gradient(circle at 58% 83%, var(--secondary-o), rgba(0,0,0,0) 300px)
 }
 
+.sneak_peak_1 {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    height: 100px;
+    left: calc(100% - 20px);
+    transform: translate(-100%, -25%) scaleX(-1);
+    z-index: -1;
+}
+
 .second-section-gradient {
+    z-index: -2;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -605,6 +618,15 @@ video::-webkit-media-controls-mute-button {
     right: 0;
     background: radial-gradient(circle at 90% 40%, var(--secondary-o), rgba(0,0,0,0) 320px),
                 radial-gradient(circle at 10% 20%, var(--primary-o), rgba(0,0,0,0) 320px)
+}
+
+.sneak_peak_2 {
+    position: absolute;
+    width: 25%;
+    top: 0;
+    left: 93%;
+    z-index: -1;
+    transform: scaleX(-1) translate(100%, -55%)
 }
 
 .third-section-gradient {
@@ -626,6 +648,10 @@ video::-webkit-media-controls-mute-button {
         background: radial-gradient(circle at 80% -10%, var(--secondary-o), rgba(0,0,0,0) 600px),
                     radial-gradient(circle at 25% 65%, var(--primary-o), rgba(0,0,0,0) 425px)
     }
+
+    .sneak_peak_1 {
+        transform: translate(-100%, -25%) scaleX(1);
+    }
     
     .second-section-gradient {
         position: absolute;
@@ -636,6 +662,16 @@ video::-webkit-media-controls-mute-button {
         background: radial-gradient(circle at 80% 60%, var(--secondary-o), rgba(0,0,0,0) 470px),
                     radial-gradient(circle at 25% 40%, var(--primary-o), rgba(0,0,0,0) 470px)
     }
+
+    .sneak_peak_2 {
+        position: absolute;
+        width: 15%;
+        top: 43%;
+        left: 93%;
+        z-index: -1;
+        transform: scaleX(-1) translate(75%, 0)
+    }
+
     
     .third-section-gradient {
         position: absolute;
@@ -649,10 +685,24 @@ video::-webkit-media-controls-mute-button {
     }
 }
 
+@media (min-width: 1200px) {
+    .sneak_peak_2 {
+        position: absolute;
+        width: 15%;
+        top: 38%;
+        left: 93%;
+        z-index: -1;
+        transform: scaleX(-1) translate(75%, 0)
+    }
+}
+
 @media (min-width: 2200px) {
+    
     .first-section-gradient {
-        background: radial-gradient(circle at 70% -10%, var(--secondary-o), rgba(0,0,0,0) 600px),
+        background-repeat: no-repeat;
+        background-image: radial-gradient(circle at 70% -10%, var(--secondary-o), rgba(0,0,0,0) 600px),
                     radial-gradient(circle at 35% 55%, var(--primary-o), rgba(0,0,0,0) 550px)
+                    
     }
 
     .second-section-gradient {
@@ -660,10 +710,15 @@ video::-webkit-media-controls-mute-button {
                     radial-gradient(circle at 30% 40%, var(--primary-o), rgba(0,0,0,0) 550px)
     }
 
+    .sneak_peak_2 {
+        top: 34.5%;
+    }
+
     .third-section-gradient {
         background: radial-gradient(circle at 70% 27%, var(--secondary-o), rgba(0,0,0,0) 500px),
                     radial-gradient(circle at 25% 17%, var(--primary-o), rgba(0,0,0,0) 470px),
-                    radial-gradient(circle at 25% 60%, var(--primary-o), rgba(0,0,0,0) 470px)
+                    radial-gradient(circle at 25% 60%, var(--primary-o), rgba(0,0,0,0) 470px),
+                    
     }
 }
 
