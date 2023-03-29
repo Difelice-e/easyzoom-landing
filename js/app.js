@@ -4,6 +4,7 @@ if (location.hash) {
 
 const MINT_DATE = "2023-03-29 16:00:00"
 let mintDateLocal = moment.utc(MINT_DATE).local().format("DD MMMM HH:mm")
+console.log(moment.utc().local().format("DD MMMM HH:mm"))
 document.getElementById("mint-date").innerText = mintDateLocal
 
 const mintButton = document.getElementById("mint-button");
