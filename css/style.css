@@ -689,7 +689,7 @@ video::-webkit-media-controls-mute-button {
     .sneak_peak_2 {
         position: absolute;
         width: 15%;
-        top: 38%;
+        top: 40%;
         left: 93%;
         z-index: -1;
         transform: scaleX(-1) translate(75%, 0)
@@ -711,7 +711,7 @@ video::-webkit-media-controls-mute-button {
     }
 
     .sneak_peak_2 {
-        top: 34.5%;
+        top: 40%;
     }
 
     .third-section-gradient {
